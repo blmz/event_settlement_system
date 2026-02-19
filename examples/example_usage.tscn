@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://b3tcylhu52m3m"]
+
+[ext_resource type="Script" uid="uid://dpjsi7q66cuxv" path="res://examples/example_usage.gd" id="1_abcde"]
+
+[node name="ExampleUsage" type="Control" unique_id=2117333242]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_abcde")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1125898093]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -250.0
+offset_right = 200.0
+offset_bottom = 250.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="Title" type="Label" parent="VBoxContainer" unique_id=2095190752]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "事件结算系统示例"
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=1342874065]
+custom_minimum_size = Vector2(400, 200)
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+text = "系统初始化中..."
+autowrap_mode = 3
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer" unique_id=1668070280]
+layout_mode = 2
+
+[node name="TestDamageButton" type="Button" parent="VBoxContainer" unique_id=1535109079]
+layout_mode = 2
+text = "测试伤害事件"
+
+[node name="TestHealButton" type="Button" parent="VBoxContainer" unique_id=1956452770]
+layout_mode = 2
+text = "测试治疗事件"
+
+[node name="TestCustomButton" type="Button" parent="VBoxContainer" unique_id=1097980631]
+layout_mode = 2
+text = "测试自定义事件"
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer" unique_id=1609754604]
+layout_mode = 2
+
+[node name="ClearModifiersButton" type="Button" parent="VBoxContainer" unique_id=413501394]
+layout_mode = 2
+text = "清除所有修改器"
+
+[connection signal="pressed" from="VBoxContainer/TestDamageButton" to="." method="_on_test_damage_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/TestHealButton" to="." method="_on_test_heal_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/TestCustomButton" to="." method="_on_test_custom_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/ClearModifiersButton" to="." method="_on_clear_modifiers_button_pressed"]
