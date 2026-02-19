@@ -120,14 +120,4 @@
 
 ---
 
-## 贡献指南
-
-如果你想为项目贡献：
-1. 查看 [CONTRIBUTING.md](CONTRIBUTING.md)
-2. 遵循代码规范
-3. 更新此 CHANGELOG
-4. 提交 Pull Request
-
----
-
 **[1.0.0]**: https://github.com/yourusername/event_settlement_system/releases/tag/v1.0.0

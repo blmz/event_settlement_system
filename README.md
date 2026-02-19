@@ -2,6 +2,8 @@
 
 通用数值管线结算系统 for Godot 4.6+
 
+> English version available at [README.en.md](README.en.md)
+
 ---
 
 ## 简介
@@ -48,6 +50,14 @@ var result = EventSettlementManager.process_event(damage_event)
 - 阻断机制：通过 `event_data.is_blocked` 实现闪避、免疫等效果。
 - WeakRef 引用：事件不会阻止节点被销毁，避免泄漏。
 - unique_id：方便 Buff 替换、注销。
+
+---
+
+## 系统示意图
+
+![事件结算使用流程](addons/event_settlement_system/image/使用流程图_CN.png)
+
+![事件结算系统架构](addons/event_settlement_system/image/系统架构图_CN.png)
 
 ---
 
@@ -311,19 +321,7 @@ event_settlement_system/
 
 ## 贡献
 
-欢迎贡献代码、报告问题或提出建议！
-
-1. Fork 本仓库
-2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 开启 Pull Request
-
-### 贡献指南
-
-- 遵循 GDScript 官方风格指南
-- 在新增功能时同步更新示例和文档
-- 附带用途说明和测试场景
+目前暂不接受外部代码贡献，如有建议或问题请通过 Issue 提交反馈。
 
 ---
 
