@@ -293,25 +293,4 @@ MIT License – see [LICENSE](LICENSE).
 
 ---
 
-## Roadmap
-
-### v1.0.0
-- Core event system
-- Modifier system
-- Pipeline processing
-- Samples and documentation
-
-### v1.1.0
-- Visualization/debug tooling
-- Additional condition presets
-- Real-world example project
-
-### v2.0.0
-- Network synchronization support
-- Serialization/save support
-- AI behavior tree integration (planned)
-- Full combat template (planned)
-
----
-
 **If this plugin helps you, please star the repo!**
